@@ -229,7 +229,7 @@ class LightNode extends TransformationSGNode {
       position = this.computeLightPosition(context);
 
     //TASK 3-5 set uniforms
-	gl.uniform4fv(gl.getUniformLocation(shader, this.uniform+'.ambient'), this.ambient);
+	  gl.uniform4fv(gl.getUniformLocation(shader, this.uniform+'.ambient'), this.ambient);
     gl.uniform4fv(gl.getUniformLocation(shader, this.uniform+'.diffuse'), this.diffuse);
     gl.uniform4fv(gl.getUniformLocation(shader, this.uniform+'.specular'), this.specular);
 
