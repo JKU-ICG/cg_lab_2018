@@ -10,6 +10,7 @@ Slides and lab material can be found at:
 # Staff
  * David Schedl (@schedldave)
  * Marc Streit (@mstreit)
+ * Martin Ennemoser
  * Teaching Assistants: Vaishali Dhanoa
 
 # Launch
