@@ -378,7 +378,13 @@ class TransformationSceneGraphNode extends SceneGraphNode {
     //backup previous one
     var previous = context.sceneMatrix;
     //set current world matrix by multiplying it
-    context.sceneMatrix = mat4.multiply(mat4.create(), previous, this.matrix);
+    if (previous === null) {
+      context.sceneMatrix = mat4.clone(this.matrix);
+    }
+    else {
+      context.sceneMatrix = mat4.multiply(mat4.create(), previous, this.matrix);
+    }
+
     //render children
     super.render(context);
     //restore backup
