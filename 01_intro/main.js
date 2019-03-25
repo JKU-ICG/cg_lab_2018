@@ -2,10 +2,17 @@
  * Created by Samuel Gratzl on 08.02.2016.
  */
 
-//the OpenGL context
+/**
+ * the OpenGL context
+ * @type {WebGLRenderingContext}
+ */
 var gl = null;
-//our shader program
-var program = null;
+/**
+ * our shader program
+ * @type {WebGLProgram}
+ */
+var shaderProgram = null;
+
 //links to buffer stored on the GPU
 var buffer, colorBuffer;
 
@@ -54,7 +61,7 @@ function render() {
   //specify the clear color
   gl.clearColor(0.9, 0.9, 0.9, 1.0);
   //clear the buffer
-  gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+  gl.clear(gl.COLOR_BUFFER_BIT);
 
   //activate this shader program
   gl.useProgram(shaderProgram);

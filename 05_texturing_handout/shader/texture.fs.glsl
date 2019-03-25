@@ -36,6 +36,9 @@ uniform bool u_enableObjectTexture; //note: boolean flags are a simple but not t
 
 
 vec4 calculateSimplePointLight(Light light, Material material, vec3 lightVec, vec3 normalVec, vec3 eyeVec, vec4 textureColor) {
+	// You can find all built-in functions (min, max, clamp, reflect, normalize, etc.) 
+	// and variables (gl_FragCoord, gl_Position) in the OpenGL Shading Language Specification: 
+	// https://www.khronos.org/registry/OpenGL/specs/gl/GLSLangSpec.4.60.html#built-in-functions
 	lightVec = normalize(lightVec);
 	normalVec = normalize(normalVec);
 	eyeVec = normalize(eyeVec);

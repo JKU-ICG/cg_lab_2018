@@ -2,9 +2,15 @@
  * Created by Samuel Gratzl on 08.02.2016.
  */
 
-//the OpenGL context
+/**
+ * the OpenGL context
+ * @type {WebGLRenderingContext}
+ */
 var gl = null;
-//our shader program
+/**
+ * our shader program
+ * @type {WebGLProgram}
+ */
 var shaderProgram = null;
 
 var canvasWidth = 800;
@@ -78,7 +84,7 @@ loadResources({
   init(resources);
 
   //render one frame
-  render();
+  render(0);
 });
 
 /**
@@ -143,10 +149,10 @@ function render(timeInMilliseconds) {
 
   //set background color to light gray
   gl.clearColor(0.9, 0.9, 0.9, 1.0);
-  //clear the buffer
+  //clear the buffers for color and depth
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   //enable depth test to let objects in front occluse objects further away
-  gl.enable(gl.DEPTH_TEST);
+  gl.enable(gl.DEPTH_TEST);  // More on depth handling in the next lab
 
   //checkForWindowResize(gl);
   //aspectRatio = gl.canvasWidth / gl.canvasHeight;
