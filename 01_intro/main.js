@@ -5,7 +5,7 @@
 //the OpenGL context
 var gl = null;
 //our shader program
-var program = null;
+var shaderProgram = null;
 //links to buffer stored on the GPU
 var buffer, colorBuffer;
 
