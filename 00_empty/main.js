@@ -1,6 +1,13 @@
-//the OpenGL context
-var gl = null,
-    program = null;
+/**
+ * the OpenGL context
+ * @type {WebGLRenderingContext}
+ */
+var gl = null;
+/**
+ * program with vertex and fragment shader
+ * @type {WebGLProgram}
+ */
+var program = null;
 
 /**
  * initializes OpenGL context, compile shader, and load buffers

@@ -2,7 +2,12 @@
  * Created by Samuel Gratzl on 08.02.2016.
  */
 
+/**
+ * the OpenGL context
+ * @type {WebGLRenderingContext}
+ */
 var gl = null;
+
 var root = null;
 var rotateLight, rotateLight2, rotateNode;
 const camera = {

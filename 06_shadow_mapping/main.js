@@ -3,7 +3,12 @@
  */
 'use strict';
 
+/**
+ * the OpenGL context
+ * @type {WebGLRenderingContext}
+ */
 var gl = null;
+
 const camera = {
   rotation: {
     x: 0,

@@ -1,4 +1,7 @@
-//the OpenGL context
+/**
+ * the OpenGL context
+ * @type {WebGLRenderingContext}
+ */
 var gl = null;
 
 /**

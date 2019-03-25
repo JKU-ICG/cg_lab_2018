@@ -2,9 +2,15 @@
  * Created by Samuel Gratzl on 08.02.2016.
  */
 
-//the OpenGL context
+/**
+ * the OpenGL context
+ * @type {WebGLRenderingContext}
+ */
 var gl = null;
-//our shader program
+/**
+ * our shader program
+ * @type {WebGLProgram}
+ */
 var shaderProgram = null;
 
 var canvasWidth = 800;
