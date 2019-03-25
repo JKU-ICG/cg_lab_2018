@@ -54,7 +54,7 @@ function render() {
   //specify the clear color
   gl.clearColor(0.9, 0.9, 0.9, 1.0);
   //clear the buffer
-  gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+  gl.clear(gl.COLOR_BUFFER_BIT);
 
   //activate this shader program
   gl.useProgram(shaderProgram);
