@@ -74,7 +74,7 @@ loadResources({
   init(resources);
 
   //render one frame
-  render();
+  render(0);
 });
 
 /**
