@@ -143,10 +143,10 @@ function render(timeInMilliseconds) {
 
   //set background color to light gray
   gl.clearColor(0.9, 0.9, 0.9, 1.0);
-  //clear the buffer
+  //clear the buffers for color and depth
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   //enable depth test to let objects in front occluse objects further away
-  gl.enable(gl.DEPTH_TEST);
+  gl.enable(gl.DEPTH_TEST);  // More on depth handling in the next lab
 
   //checkForWindowResize(gl);
   //aspectRatio = gl.canvasWidth / gl.canvasHeight;
