@@ -256,7 +256,7 @@ function setUpModelViewMatrix(sceneMatrix, viewMatrix) {
 /**
  * returns a new rendering context
  * @param gl the gl context
- * @param projectionMatrix optional projection Matrix
+ * @param shader the shader program to set the projection uniform
  * @returns {ISceneGraphContext}
  */
 function createSceneGraphContext(gl, shader) {
